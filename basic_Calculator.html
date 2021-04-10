@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="basic_Calculator.css">
+    <link rel="JavaScript" href="basic_Calculator.js">
+    <title>CALCULATOR</title>
+    <script>
+        function validate() {
+
+            const V1 = parseInt(document.getElementById("V1").value);
+            var V2 = parseInt(document.getElementById("V2").value);
+            var v3 = V1 + V2;
+
+            document.getElementById("cal").value = v3;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    <h1>CALCULATOR</h1>
+    <h2></h2>
+    <input id="V1" type="number" placeholder="value 1">
+    <input id="V2" type="number" placeholder="value 2">
+    <br>
+    <br>
+    <br>
+    <button onclick="validate()">CALCULATE</button>
+    <h2 id="ca">RESULt =</h2>
+    <input type="text" id="cal" name="TextBox3">
+</body>
+
+</html>
